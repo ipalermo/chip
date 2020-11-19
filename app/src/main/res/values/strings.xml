@@ -1,0 +1,11 @@
+
+
+<resources>
+
+    <!-- Resources that do not require translation -->
+    <string name="app_name" translatable="false">Dogs</string>
+
+    <!-- Accessibility -->
+    <string name="a11y_item_image" translation_description="Accessibility text for each of the breed images shown in the breeds screen.">Picture of Dog Breed</string>
+
+</resources>

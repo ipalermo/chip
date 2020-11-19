@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/breeds_fragment">
+
+    <fragment
+        android:id="@+id/breeds_fragment"
+        android:name="com.chip.challenge.BreedsFragment"
+        tools:layout="@layout/fragment_breeds">
+
+        <action
+            android:id="@+id/action_breeds_fragment_to_breed_detail_fragment"
+            app:destination="@id/breed_detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/breed_detail_fragment"
+        android:name="com.chip.challenge.BreedDetailFragment"
+        tools:layout="@layout/fragment_breed_detail">
+
+        <argument
+            android:name="breedName"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
